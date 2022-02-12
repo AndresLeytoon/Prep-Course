@@ -95,106 +95,147 @@ function mayorQueCincuenta(num) {
 mayorQueCincuenta(50);
 
 function obtenerResto(x, y) {
-  // Obten el resto de la división de "x" entre "y"
-  // Tu código:
+  var resultado = x % y;
+  return resultado;
 }
+obtenerResto(10, 3);
 
 function esPar(num) {
-  // Devuelve "true" si "num" es par
-  // De lo contrario, devuelve "false"
-  // Tu código:
+  var numero = num;
+
+  if (numero % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
+esPar(2);
 
 function esImpar(num) {
-  // Devuelve "true" si "num" es impar
-  // De lo contrario, devuelve "false"
-  // Tu código:
+  var numero = num;
+
+  if (numero % 2 == 1) {
+    return true;
+  } else {
+    return false;
+  }
 }
+esImpar(1);
 
 function elevarAlCuadrado(num) {
-  // Devuelve el valor de "num" elevado al cuadrado
-  // ojo: No es raiz cuadrada!
-  // Tu código:
+  var resultado = num ** 2;
+  return resultado;
 }
+elevarAlCuadrado(4);
 
 function elevarAlCubo(num) {
-  // Devuelve el valor de "num" elevado al cubo
-  // Tu código:
+  var resultado = num ** 3;
+  return resultado;
 }
+elevarAlCubo(4);
 
 function elevar(num, exponent) {
-  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código:
+  var resultado = num ** exponent;
+  return resultado;
 }
+elevar(4, 2);
 
 function redondearNumero(num) {
-  // Redondea "num" al entero más próximo y devuélvelo
-  // Tu código:
+  const resultado = num;
+  return Math.round(resultado);
 }
+redondearNumero(1.6);
 
 function redondearHaciaArriba(num) {
-  // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
+  const resultado = num;
+  const total = resultado.toFixed(1);
+  return total;
 }
+redondearHaciaArriba(1.75);
 
-function numeroRandom() {
-  //Generar un número al azar entre 0 y 1 y devolverlo
-  //Pista: investigá qué hace el método Math.random()
+function numeroRandom(min, max) {
+  return Math.random() * (max - min) + min;
 }
+numeroRandom(0, 1);
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
-  //Si el número es positivo, devolver ---> "Es positivo"
-  //Si el número es negativo, devolver ---> "Es negativo"
-  //Si el número es 0, devuelve false
+  var pos = 1;
+  var neg = -1;
+  var neutro = 0;
+
+  var msn = ["Es positivo", "Es negativo", false];
+
+  if (numero >= pos) {
+    return msn[0];
+  } else if (numero <= neg) {
+    return msn[1];
+  } else if (numero == neutro) {
+    return msn[2];
+  }
 }
+esPositivo(0);
 
 function agregarSimboloExclamacion(str) {
-  // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
-  // Ejemplo: "hello world" pasaría a ser "hello world!"
-  // Tu código:
+  var simbolo = "!";
+  return str + simbolo;
 }
+agregarSimboloExclamacion("Hello Word");
 
 function combinarNombres(nombre, apellido) {
-  // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
-  // Ejemplo: "Soy", "Henry" -> "Soy Henry"
-  // Tu código:
+  return nombre + apellido;
 }
+combinarNombres("William", " Leyton");
 
 function obtenerSaludo(nombre) {
-  // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
-  // "Martin" -> "Hola Martin!"
-  // Tu código:
+  var saludo = "Hola";
+  return saludo + nombre;
 }
+obtenerSaludo(" William");
 
 function obtenerAreaRectangulo(alto, ancho) {
-  // Retornar el area de un rectángulo teniendo su altura y ancho
-  // Tu código:
+  return alto * ancho;
 }
+obtenerAreaRectangulo(4, 5);
 
 function retornarPerimetro(lado) {
-  //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
-  //Escribe tu código aquí
+  return 2 * Math.PI * lado;
 }
+retornarPerimetro(33);
 
-function areaDelTriangulo(base, altura) {
-  //Desarrolle una función que calcule el área de un triángulo.
-  //Escribe tu código aquí
+function areaDelTriangulo(alto, ancho) {
+  return (alto * ancho) / 2;
 }
+areaDelTriangulo(3, 7);
 
 function deEuroAdolar(euro) {
-  //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
-  //como parámetro un número de euros y calcule el cambio en dólares.
-  //Escribe tu código aquí
+  switch (euro) {
+    case "euro":
+      euro = 1.2;
+  }
+  var resultado = euro * 1.2;
+  return resultado;
 }
+deEuroAdolar(1);
 
 function esVocal(letra) {
-  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
-  //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle
-  //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
-  // Si no es vocal, tambien debe devolver "Dato incorrecto".
-  //Escribe tu código aquí
+  var vocales = ["a", "e", "i", "o", "u"];
+  var msn = "Es vocal";
+
+  if (vocales[0] === letra) {
+    return msn;
+  } else if (vocales[1] === letra) {
+    return msn;
+  } else if (vocales[2] === letra) {
+    return msn;
+  } else if (vocales[3] === letra) {
+    return msn;
+  } else if (vocales[4] === letra) {
+    return msn;
+  } else {
+    return false;
+  }
 }
+esVocal("e");
 
 // No modificar nada debajo de esta línea
 // --------------------------------
