@@ -219,23 +219,21 @@ deEuroAdolar(1);
 
 function esVocal(letra) {
   var vocales = ["a", "e", "i", "o", "u"];
-  var msn = "Es vocal";
+  var msn = ["Es vocal", "Dato incorrecto"];
 
-  if (vocales[0] === letra) {
-    return msn;
-  } else if (vocales[1] === letra) {
-    return msn;
-  } else if (vocales[2] === letra) {
-    return msn;
-  } else if (vocales[3] === letra) {
-    return msn;
-  } else if (vocales[4] === letra) {
-    return msn;
+  if (
+    vocales[0] === letra ||
+    vocales[1] === letra ||
+    vocales[2] === letra ||
+    vocales[3] === letra ||
+    vocales[4] === letra
+  ) {
+    return msn[0];
   } else {
-    return false;
+    return msn[1];
   }
 }
-esVocal("e");
+esVocal("");
 
 // No modificar nada debajo de esta línea
 // --------------------------------
