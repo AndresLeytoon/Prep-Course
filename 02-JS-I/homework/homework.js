@@ -30,11 +30,15 @@ function devolverString(str) {
 }
 devolverString("soy un string");
 
+//------------------------------------------------------------
+
 function suma(x, y) {
   var resultado = x + y;
   return resultado;
 }
 suma(2, 3);
+
+//------------------------------------------------------------
 
 function resta(x, y) {
   var resultado = x - y;
@@ -42,17 +46,23 @@ function resta(x, y) {
 }
 resta(2, 3);
 
+//------------------------------------------------------------
+
 function multiplica(x, y) {
-  var resultado = x * y;
+  var  resultado = x * y;
   return resultado;
 }
 multiplica(2, 3);
+
+//------------------------------------------------------------
 
 function divide(x, y) {
   var resultado = x / y;
   return resultado;
 }
 divide(2, 3);
+
+//------------------------------------------------------------
 
 function sonIguales(x, y) {
   let resultado = [x, y];
@@ -64,6 +74,8 @@ function sonIguales(x, y) {
 }
 sonIguales(1, 3);
 
+//------------------------------------------------------------
+
 function tienenMismaLongitud(str1, str2) {
   let resultado = [str1, str2];
   if (resultado[0].length == resultado[1].length) {
@@ -73,6 +85,8 @@ function tienenMismaLongitud(str1, str2) {
   }
 }
 tienenMismaLongitud("hola", "hol");
+
+//------------------------------------------------------------
 
 function menosQueNoventa(num) {
   let resultado = num;
@@ -84,6 +98,8 @@ function menosQueNoventa(num) {
 }
 menosQueNoventa(89);
 
+//------------------------------------------------------------
+
 function mayorQueCincuenta(num) {
   let resultado = num;
   if (resultado >= 50) {
@@ -94,11 +110,15 @@ function mayorQueCincuenta(num) {
 }
 mayorQueCincuenta(50);
 
+//------------------------------------------------------------
+
 function obtenerResto(x, y) {
   var resultado = x % y;
   return resultado;
 }
 obtenerResto(10, 3);
+
+//------------------------------------------------------------
 
 function esPar(num) {
   var numero = num;
@@ -111,6 +131,8 @@ function esPar(num) {
 }
 esPar(2);
 
+//------------------------------------------------------------
+
 function esImpar(num) {
   var numero = num;
 
@@ -122,11 +144,15 @@ function esImpar(num) {
 }
 esImpar(1);
 
+//------------------------------------------------------------
+
 function elevarAlCuadrado(num) {
   var resultado = num ** 2;
   return resultado;
 }
 elevarAlCuadrado(4);
+
+//------------------------------------------------------------
 
 function elevarAlCubo(num) {
   var resultado = num ** 3;
@@ -134,17 +160,23 @@ function elevarAlCubo(num) {
 }
 elevarAlCubo(4);
 
+//------------------------------------------------------------
+
 function elevar(num, exponent) {
   var resultado = num ** exponent;
   return resultado;
 }
 elevar(4, 2);
 
+//------------------------------------------------------------
+
 function redondearNumero(num) {
   const resultado = num;
   return Math.round(resultado);
 }
 redondearNumero(1.6);
+
+//------------------------------------------------------------
 
 function redondearHaciaArriba(num) {
   const resultado = num;
@@ -153,10 +185,14 @@ function redondearHaciaArriba(num) {
 }
 redondearHaciaArriba(1.75);
 
+//------------------------------------------------------------
+
 function numeroRandom(min, max) {
   return Math.random() * (max - min) + min;
 }
 numeroRandom(0, 1);
+
+//------------------------------------------------------------
 
 function esPositivo(numero) {
   var pos = 1;
@@ -175,16 +211,22 @@ function esPositivo(numero) {
 }
 esPositivo(0);
 
+//------------------------------------------------------------
+
 function agregarSimboloExclamacion(str) {
   var simbolo = "!";
   return str + simbolo;
 }
 agregarSimboloExclamacion("Hello Word");
 
+//------------------------------------------------------------
+
 function combinarNombres(nombre, apellido) {
   return nombre + apellido;
 }
 combinarNombres("William", " Leyton");
+
+//------------------------------------------------------------
 
 function obtenerSaludo(nombre) {
   var saludo = "Hola";
@@ -192,20 +234,28 @@ function obtenerSaludo(nombre) {
 }
 obtenerSaludo(" William");
 
+//------------------------------------------------------------
+
 function obtenerAreaRectangulo(alto, ancho) {
   return alto * ancho;
 }
 obtenerAreaRectangulo(4, 5);
+
+//------------------------------------------------------------
 
 function retornarPerimetro(lado) {
   return 2 * Math.PI * lado;
 }
 retornarPerimetro(33);
 
+//------------------------------------------------------------
+
 function areaDelTriangulo(alto, ancho) {
   return (alto * ancho) / 2;
 }
 areaDelTriangulo(3, 7);
+
+//------------------------------------------------------------
 
 function deEuroAdolar(euro) {
   switch (euro) {
@@ -216,6 +266,8 @@ function deEuroAdolar(euro) {
   return resultado;
 }
 deEuroAdolar(1);
+
+//------------------------------------------------------------
 
 function esVocal(letra) {
   var vocales = ["a", "e", "i", "o", "u"];
@@ -235,6 +287,7 @@ function esVocal(letra) {
 }
 esVocal("");
 
+//------------------------------------------------------------
 // No modificar nada debajo de esta línea
 // --------------------------------
 
