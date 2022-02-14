@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1.05;
+const nuevoModulo = 21 % 5 === 1;
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -57,8 +57,7 @@ multiplica(2, 3);
 //------------------------------------------------------------
 
 function divide(x, y) {
-  var resultado = x / y;
-  return resultado;
+  return x/y;
 }
 divide(2, 3);
 
@@ -89,8 +88,8 @@ tienenMismaLongitud("hola", "hol");
 //------------------------------------------------------------
 
 function menosQueNoventa(num) {
-  let resultado = num;
-  if (resultado <= 90) {
+  
+  if (num < 90) {
     return true;
   } else {
     return false;
@@ -101,8 +100,8 @@ menosQueNoventa(89);
 //------------------------------------------------------------
 
 function mayorQueCincuenta(num) {
-  let resultado = num;
-  if (resultado >= 50) {
+  
+  if (num > 50) {
     return true;
   } else {
     return false;
@@ -229,8 +228,8 @@ combinarNombres("William", " Leyton");
 //------------------------------------------------------------
 
 function obtenerSaludo(nombre) {
-  var saludo = "Hola";
-  return saludo + nombre;
+  
+  return "Hola {nombre}!";
 }
 obtenerSaludo(" William");
 
@@ -262,10 +261,10 @@ function deEuroAdolar(euro) {
     case "euro":
       euro = 1.2;
   }
-  var resultado = euro * 1.2;
-  return resultado;
+   return euro;
 }
 deEuroAdolar(1);
+
 
 //------------------------------------------------------------
 
@@ -297,7 +296,7 @@ module.exports = {
   nuevoBool,
   nuevaResta,
   nuevaMultiplicacion,
-  nuevoModulo,
+  nuevoModulo, 
   devolverString,
   tienenMismaLongitud,
   sonIguales,
