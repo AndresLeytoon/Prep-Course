@@ -178,16 +178,16 @@ redondearNumero(1.6);
 //------------------------------------------------------------
 
 function redondearHaciaArriba(num) {
-  const resultado = num;
-  const total = resultado.toFixed(1);
-  return total;
+  
+  
+  return Math.ceil(num);
 }
 redondearHaciaArriba(1.75);
 
 //------------------------------------------------------------
 
 function numeroRandom(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.random();
 }
 numeroRandom(0, 1);
 
@@ -221,7 +221,7 @@ agregarSimboloExclamacion("Hello Word");
 //------------------------------------------------------------
 
 function combinarNombres(nombre, apellido) {
-  return nombre + apellido;
+  return nombre + " "+ apellido;
 }
 combinarNombres("William", " Leyton");
 
@@ -229,7 +229,7 @@ combinarNombres("William", " Leyton");
 
 function obtenerSaludo(nombre) {
   
-  return "Hola {nombre}!";
+  return `Hola ${nombre}!`
 }
 obtenerSaludo(" William");
 
@@ -243,7 +243,7 @@ obtenerAreaRectangulo(4, 5);
 //------------------------------------------------------------
 
 function retornarPerimetro(lado) {
-  return 2 * Math.PI * lado;
+  return 4 * lado;
 }
 retornarPerimetro(33);
 
@@ -257,14 +257,10 @@ areaDelTriangulo(3, 7);
 //------------------------------------------------------------
 
 function deEuroAdolar(euro) {
-  switch (euro) {
-    case "euro":
-      euro = 1.2;
-  }
-   return euro;
+  
+   return euro * 1.2;
 }
 deEuroAdolar(1);
-
 
 //------------------------------------------------------------
 
