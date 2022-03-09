@@ -122,7 +122,7 @@ obtenerResto(10, 3);
 function esPar(num) {
   var numero = num;
 
-  if (numero % 2 == 0) {
+  if (numero % 2 !== 0) {
     return true;
   } else {
     return false;
