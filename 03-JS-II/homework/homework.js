@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
     return y;
   }
 }
-obtenerMayor(3, 6);
+
 
 //--------------------------------------------------------------
 
@@ -20,7 +20,7 @@ function mayoriaDeEdad(edad) {
     return msn[1];
   }
 }
-mayoriaDeEdad(18);
+
 
 //--------------------------------------------------------------
 

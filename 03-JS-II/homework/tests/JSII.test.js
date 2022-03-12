@@ -34,6 +34,8 @@ describe('mayoriaDeEdad(edad)', function() {
   it('should return \'Allowed\'if edad is equal or greater than 18', function() {
     expect(mayoriaDeEdad(18)).toBe('Allowed');
     expect(mayoriaDeEdad(35)).toBe('Allowed');
+    expect(mayoriaDeEdad(17)).toBe('Not Allowed');
+    
   });
   it('should return \'Not allowed\'if edad is less than 18', function() {
     expect(mayoriaDeEdad(7)).toBe('Not allowed');

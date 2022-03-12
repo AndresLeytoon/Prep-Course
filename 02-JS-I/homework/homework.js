@@ -25,18 +25,18 @@ const nuevoModulo = 21 % 5 === 1;
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
-  var msn = str;
-  return msn;
+  
+  return str;
 }
-devolverString("soy un string");
+
 
 //------------------------------------------------------------
 
 function suma(x, y) {
-  var resultado = x + y;
-  return resultado;
+  
+  return x + y;
 }
-suma(2, 3);
+
 
 //------------------------------------------------------------
 
@@ -44,7 +44,6 @@ function resta(x, y) {
   var resultado = x - y;
   return resultado;
 }
-resta(2, 3);
 
 //------------------------------------------------------------
 
@@ -52,14 +51,15 @@ function multiplica(x, y) {
   var  resultado = x * y;
   return resultado;
 }
-multiplica(2, 3);
+
 
 //------------------------------------------------------------
 
 function divide(x, y) {
-  return x/y;
+  let divide = x / y;
+  return divide;
 }
-divide(2, 3);
+
 
 //------------------------------------------------------------
 
@@ -71,7 +71,7 @@ function sonIguales(x, y) {
     return false;
   }
 }
-sonIguales(1, 3);
+
 
 //------------------------------------------------------------
 
@@ -120,15 +120,14 @@ obtenerResto(10, 3);
 //------------------------------------------------------------
 
 function esPar(num) {
-  var numero = num;
 
-  if (numero % 2 !== 0) {
+  if (num % 2 == 0) {
     return true;
   } else {
     return false;
   }
 }
-esPar(2);
+
 
 //------------------------------------------------------------
 
