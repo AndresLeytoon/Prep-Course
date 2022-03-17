@@ -5,9 +5,10 @@ function obtenerMayor(x, y) {
     return x;
   } else {
     return y;
+
   }
 }
-
+console,log()
 
 //--------------------------------------------------------------
 
